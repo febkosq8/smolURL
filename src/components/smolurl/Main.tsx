@@ -1,7 +1,7 @@
 import { Button } from "@smolurl/components/ui/Button";
 import Input from "@smolurl/components/ui/Input";
 import APIHandler from "@smolurl/handlers/APIHandler";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";

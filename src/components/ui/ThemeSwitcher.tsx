@@ -1,7 +1,7 @@
-import Menu from "@smolurl/components/ui/Menu";
-import Pill from "@smolurl/components/ui/Pill";
 import { faLaptop, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Menu from "@smolurl/components/ui/Menu";
+import Pill from "@smolurl/components/ui/Pill";
 import { useEffect, useState } from "react";
 export default function ThemeSwitcher() {
 	const colorModeIcon = { light: faSun, dark: faMoon, system: faLaptop };
