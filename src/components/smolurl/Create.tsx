@@ -6,6 +6,7 @@ import { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 export default function Create() {
+	document.title = "SmolURL | Create";
 	const { redirectUrl } = useParams();
 	const [shortValues, setShortValues] = useState({
 		shortName: "",
