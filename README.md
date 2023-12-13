@@ -1,5 +1,5 @@
 ## About SmolURL
 
-- 🙋‍♂️ Know more about me : **[febkosq8.me](https://www.febkosq8.me/)**
+- 🙋‍♂️ A simple URL shortner service
 
 ![ ](https://febgoserve.me/imgAnalytics/smolurl)
