@@ -1,6 +1,6 @@
 import ThemeSwitcher from "@smolurl/components/ui/ThemeSwitcher";
-import smollURL from "@smolurl/assets/smollURL.svg";
-import { Link, NavLink } from "react-router-dom";
+import Menu from "@smolurl/components/ui/Menu";
+const currPath = window.location.pathname;
 export default function Header() {
 	return (
 		<div className="flex text-2xl items-center w-full justify-between px-16 h-16 bg-background border-b-2 sticky top-0">
@@ -21,22 +21,8 @@ export default function Header() {
 				</svg>
 			</a>
 			<div className="flex items-center gap-4">
-				<NavLink
-					className={({ isActive }) => {
-						return !!isActive ? "text-primary" : "text-foreground ";
-					}}
-					to="/"
-				>
-					Home
-				</NavLink>
-				<NavLink
-					className={({ isActive }) => {
-						return !!isActive ? "text-primary" : "text-foreground";
-					}}
-					to="/create"
-				>
-					Create
-				</NavLink>
+				<Menu active={currPath === "/"} href="/" buttonContent="Home" />
+				<Menu active={currPath === "/create"} href="/create" buttonContent="Create" />
 				<ThemeSwitcher />
 			</div>
 		</div>
