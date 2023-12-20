@@ -1,5 +1,5 @@
+import LinkPill from "@smolurl/components/ui/LinkPill";
 import ThemeSwitcher from "@smolurl/components/ui/ThemeSwitcher";
-import Menu from "@smolurl/components/ui/Menu";
 const currPath = window.location.pathname;
 export default function Header() {
 	return (
@@ -21,8 +21,12 @@ export default function Header() {
 				</svg>
 			</a>
 			<div className="flex items-center gap-4">
-				<Menu active={currPath === "/"} href="/" buttonContent="Home" />
-				<Menu active={currPath === "/create"} href="/create" buttonContent="Create" />
+				<LinkPill active={currPath === "/"} href="/">
+					Home
+				</LinkPill>
+				<LinkPill active={currPath === "/create"} href="/create">
+					Create
+				</LinkPill>
 				<ThemeSwitcher />
 			</div>
 		</div>
