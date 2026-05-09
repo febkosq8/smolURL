@@ -2,4 +2,4 @@
 
 - 🙋‍♂️ A simple URL shortener service
 
-![ ](https://serve.febkosq8.me/api/v1/analyticsbadge/smolurl)
+![ ](https://serve.febkosq8.me/publicapi/v1/analyticsbadge/smolurl)
